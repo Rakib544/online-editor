@@ -15,3 +15,26 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.full-div{
+  width: 363px;
+  height: 977px;
+  background-color: #FFFFFF;
+}
+
+.top-part{
+  height:60px;
+  background-color: #363A3D;
+}
+
+.second-canvas{
+  background-color: #212121
+}
+
+.input-style{
+  background-color: #F1F1F4;
+}
+
+.fs-18{
+  font-size:18px;
+}
