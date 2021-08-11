@@ -9,13 +9,9 @@ const LeftSideBar = () => {
       <div className="container">
         <div className={`${styles.LeftSideBar}`}>
           {data.map((logo) => (
-            <Image
-              key={logo.id}
-              src={logo.logo}
-              width="50"
-              height="50"
-              alt="logo"
-            />
+            <div key={logo.id} className={`${styles.LeftSideBarLogo} `}>
+              <Image src={logo.logo} width="50" height="50" alt="logo" />
+            </div>
           ))}
         </div>
       </div>
