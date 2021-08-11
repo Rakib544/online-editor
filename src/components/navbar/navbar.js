@@ -1,9 +1,7 @@
-import React from 'react';
-import styles from './navbar.module.css';
-import { FaBeer } from 'react-icons/fa';
-import { BiMenu } from 'react-icons/Bi';
-import Image from 'next/image';
-import Icon from '../../utilites/images/Mask Group.svg';
+import Image from "next/image";
+import React from "react";
+import Icon from "../../utilites/images/Mask Group.svg";
+import styles from "./navbar.module.css";
 
 const Navbar = () => {
   return (
@@ -32,11 +30,6 @@ const Navbar = () => {
             <li className="nav-item me-5">
               <a className={`${styles.publishBtn} `} href="#">
                 Publish
-              </a>
-            </li>
-            <li className="nav-item me-5">
-              <a className={`${styles.navIcon} `} href="#">
-                <BiMenu />
               </a>
             </li>
           </ul>
