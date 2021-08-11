@@ -1,0 +1,22 @@
+.navbar{
+    background-color: #212121;
+}
+.navBtn{
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.navBtn:hover{
+    color: black;
+    background-color: whitesmoke;
+}
+.publishBtn{
+    background-color:#50C2FF;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.navIcon{
+    color: white;
+    font-size: 38px;
+}
