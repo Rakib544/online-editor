@@ -1,5 +1,6 @@
 import Navbar from "../src/components/navbar/navbar";
 import RightSideBar from "../src/components/sidebar/rightSideBar/rightSideBar";
+import Analytics from './../src/components/analytics/analytics';
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <Navbar />
       <RightSideBar/>
       <h1>Hello</h1>
+      <Analytics/>
     </div>
   );
 }
