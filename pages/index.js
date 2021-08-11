@@ -5,8 +5,13 @@ export default function Home() {
   return (
     <div className="container">
       <Navbar />
-      <RightSideBar />
-      <h1>Hello</h1>
+      <div className="row">
+        <div className="col-4"></div>
+        <div className="col-4"></div>
+        <div className="col-4">
+          <RightSideBar />
+        </div>
+      </div>
     </div>
   );
 }

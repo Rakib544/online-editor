@@ -17,25 +17,38 @@ a {
   box-sizing: border-box;
 }
 
-.full-div{
+/* .full-div {
   width: 363px;
   height: 977px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
+} */
+
+.top-part {
+  height: 60px;
+  background-color: #363a3d;
 }
 
-.top-part{
-  height:60px;
-  background-color: #363A3D;
+.second-canvas {
+  background-color: #212121;
 }
 
-.second-canvas{
-  background-color: #212121
+.input-style {
+  background-color: #f1f1f4;
 }
 
-.input-style{
-  background-color: #F1F1F4;
+.fs-18 {
+  font-size: 18px;
+  line-height: 14px;
 }
 
-.fs-18{
-  font-size:18px;
+.color-field {
+  height: 39px;
+}
+
+.text-line-height {
+  line-height: 39px;
+}
+
+.btn-color {
+  background-color: #f1f1f4;
 }

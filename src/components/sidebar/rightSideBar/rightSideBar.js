@@ -1,58 +1,57 @@
-import React from "react";
+import { useState } from "react";
+import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 
 const RightSideBar = () => {
+  const [selectedColor, setSelectedColor] = useState("#000");
   return (
-    <div className="full-div border border-dark">
-      <div className="w-full top-part d-flex align-items-center justify-content-center">
-        <p className="text-white">Projects settings</p>
-      </div>
+    <div className="bg-white vh-100">
+      <p className="text-white py-3 text-center bg-dark">Projects settings</p>
       <div className="container">
-        <form action=" ">
-          <div className="row">
-            <div className="col-12 mt-3">
-              <p className="fs-18 fw-bold" htmlFor="">
-                Project Name
-              </p>
-              <input className="form-control input-style" type="text" />
-            </div>
-          </div>
-          <div className="row mt-5">
-            <p className="fs-18 fw-bold" htmlFor="">
-              Canvas Color
-            </p>
-            <div className="col-6 pt-1">
-              <input className="form-control input-style" type="text" />
-            </div>
-
-            <div className="col-6 mt-1">
-              <input className="form-control  second-canvas" type="text" />
-            </div>
-          </div>
-          <hr className="mt-4" />
-          <div className="row">
-            <p className="fs-18 fw-bold">Canvas area (?)</p>
-            <div className="col-6 d-grid">
-              <button className="w-full">+</button>
-            </div>
-            <div className="col-6 d-grid">
-              <button className="w-full">-</button>
-            </div>
-          </div>
-          <hr className="mt-4" />
-          <p
-            class="form-check-label fs-18 fw-bold"
-            for="flexSwitchCheckDefault"
-          >
-            show guidens
-          </p>
-          <div class="form-check form-switch ">
+        <div className="col-12 mt-4">
+          <p className="fs-18 fw-bold">Project Name</p>
+          <input
+            placeholder="Title is here"
+            className="form-control input-style fw-bold"
+            type="text"
+          />
+        </div>
+        <p className="fs-18 fw-bold mt-5">Canvas Color</p>
+        <div className="row me-1">
+          <div className="col-6 pt-1">
             <input
-              class="form-check-input "
-              type="checkbox"
-              id="flexSwitchCheckDefault"
+              className="form-control color-field"
+              onChange={(e) => setSelectedColor(e.target.value)}
+              type="color"
             />
           </div>
-        </form>
+          <p className="col-6 mt-1 py-2 rounded-3 bg-dark text-white text-center">
+            {selectedColor}
+          </p>
+        </div>
+        <hr className="mt-4" />
+        <p className="fs-18 fw-bold">Canvas area (?)</p>
+        <div className="row">
+          <div className="col-6 d-grid">
+            <button className="w-full btn btn-color">
+              <AiOutlinePlus />
+            </button>
+          </div>
+          <div className="col-6 d-grid">
+            <button className="w-full btn btn-color">
+              {" "}
+              <AiOutlineMinus />{" "}
+            </button>
+          </div>
+        </div>
+        <hr className="mt-4" />
+        <p className="form-check-label fs-18 fw-bold">Show guides</p>
+        <div className="form-check form-switch ">
+          <input
+            className="form-check-input"
+            type="checkbox"
+            id="flexSwitchCheckDefault"
+          />
+        </div>
       </div>
     </div>
   );
