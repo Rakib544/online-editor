@@ -3,7 +3,7 @@ import RightSideBar from "../src/components/sidebar/rightSideBar/rightSideBar";
 
 export default function Home() {
   return (
-    <div className="container">
+    <>
       <Navbar />
       <div className="row">
         <div className="col-4"></div>
@@ -12,6 +12,6 @@ export default function Home() {
           <RightSideBar />
         </div>
       </div>
-    </div>
+    </>
   );
 }
