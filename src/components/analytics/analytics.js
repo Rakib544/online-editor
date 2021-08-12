@@ -8,7 +8,7 @@ const Analytics = () => {
       <div className="col-3">
         <AnalyticsSideBar />
       </div>
-      <div className="col-9">
+      <div className="col-9 mt-5">
         <AnalyticsBody />
       </div>
     </div>
